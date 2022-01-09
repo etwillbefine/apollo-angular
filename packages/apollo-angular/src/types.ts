@@ -57,7 +57,7 @@ export interface WatchQueryOptions<TVariables, TData>
   useInitialLoading?: boolean;
 }
 
-export interface SubscriptionResult<TData> extends ExecutionResult {
+export interface SubscriptionResult<TData> extends ExecutionResult<TData> {
   data?: TData;
 }
 
